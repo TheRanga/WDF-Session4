@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Page Title-->
+        <title>Assignment 4.3</title>
+        <!--  2. Objective: This assignment will help you master the following concepts: div Element, CSS3 Animations
+        5. Problem Statement
+         Create a div and add an image inside a div box.
+         The image should change its border radius on hover
+         Use Transition + Transform on hover it should animate the div box with width of 500px and height 0f 400px.-->
+
+        <style>
+            /* animation - transform properties written here */
+            @keyframes transformTest {
+                50% {height: 400px;} 
+                100% {width: 500px;}
+            }
+
+            /*CSS styles written on the image elements' ID*/
+            #bridImage:hover {
+                /* The image changes its border radius on hover */
+                border-radius: 30px;
+                transition-duration: 1s;
+                animation: transformTest 3s infinite;
+                /* animation-duration: 3s; */
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <!-- Page Heading -->
+        <h1>Assignment 4.3 - Transform and Transition</h1><br/>
+        
+        <div> 
+            <!-- bird image -->            
+            <img id="bridImage" src="images/bird.jpg" alt="The Blue Bird" width="304" height="228">
+            
+        </div>
+
+    </body>
+
+</html>

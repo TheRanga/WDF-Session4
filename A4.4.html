@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment A4.4</title>
+    <!--         2. Objective: This assignment will help you in mastering the following concept: CSS3 Animations
+        5. Problem Statement
+         Create a Div box and insert an image as bicycle inside the Div box and perform the
+        following tasks:
+         Drive the image with animation timing duration to 5s.
+         Animate the image using animation-timing-function.
+         Add animation iteration property to make the animation infinite.
+         Animate the image from margin left 0px to left 500px. Use @keyframes. -->
+        <style>
+
+            /*CSS styles written on the image elements' ID*/
+            div {
+                position: relative;
+                /* Add animation iteration property to make the animation infinite.
+                 Drive the image with animation timing duration to 5s */
+                animation: animate 5s infinite;
+                animation-timing-function: linear;
+            }
+
+            /* Animate the image from margin left 0px to left 500px */
+            @keyframes animate {
+                from {left: 0px;}
+                to {left: 500px;}
+            }
+        </style> 
+
+    </head>
+
+    <body>
+        <!-- Page Heading -->
+        <h1>Assignment 4.4- CSS Animations - using keyframes </h1><br/>
+        
+        <div>
+            <!-- insert an image as bicycle inside the Div box -->
+            <img id="bridImage" src="images/cycle.jpg" alt="The Blue Bird" width="100" height="100">
+        </div>
+    </body>
+
+</html>
